@@ -3,47 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manila Countdown</title>
+    <title>G&E Countdown</title>
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#0a0a0a">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #0a0a0a; color: #ededed; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); }
+        body { background-color: #0e0e0e; color: #ededed; }
+        .glass { 
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+        }
+        .glass:active {
+            transition: transform 0.3s ease;
+            transform: scale(0.90);
+            background: rgba(255, 255, 255, 0.025);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
     </style>
 </head>
 <body class="flex items-center justify-center min-h-screen p-6 font-sans">
 
     <main class="w-full max-w-md text-center space-y-8 transition-opacity duration-1000">
-        <h1 class="text-4xl font-bold tracking-tight text-white">Next Manila Event</h1>
+        <h1 class="text-4xl font-bold tracking-tight text-white">❤G&E❤</h1>
 
         <div id="timer" class="grid grid-cols-4 gap-2 sm:gap-4">
-            <div class="glass p-3 rounded-xl">
-                <span id="days" class="block text-2xl font-mono font-bold">00</span>
+            <div class="glass p-3 rounded-xl border border-white/10 shadow-lg">
+                <span id="days" class="block text-4xl font-mono font-bold">00</span>
                 <span class="text-[10px] uppercase tracking-widest text-gray-500">Days</span>
             </div>
-            <div class="glass p-3 rounded-xl">
-                <span id="hours" class="block text-2xl font-mono font-bold">00</span>
+            <div class="glass p-3 rounded-xl border border-white/10 shadow-lg">
+                <span id="hours" class="block text-4xl font-mono font-bold">00</span>
                 <span class="text-[10px] uppercase tracking-widest text-gray-500">Hours</span>
             </div>
-            <div class="glass p-3 rounded-xl">
-                <span id="minutes" class="block text-2xl font-mono font-bold">00</span>
+            <div class="glass p-3 rounded-xl border border-white/10 shadow-lg">
+                <span id="minutes" class="block text-4xl font-mono font-bold">00</span>
                 <span class="text-[10px] uppercase tracking-widest text-gray-500">Mins</span>
             </div>
-            <div class="glass p-3 rounded-xl">
-                <span id="seconds" class="block text-2xl font-mono font-bold">00</span>
+            <div class="glass p-3 rounded-xl border border-white/10 shadow-lg">
+                <span id="seconds" class="block text-4xl font-mono font-bold">00</span>
                 <span class="text-[10px] uppercase tracking-widest text-gray-500">Secs</span>
             </div>
         </div>
 
-        <div class="space-y-4">
-            <p class="text-gray-400 font-medium">📍 Metro Manila, Philippines</p>
-            <div class="overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
-                <img src="https://api.placeholder.com/600/400/1a1a1a/ffffff?text=Map+of+Manila" 
-                     alt="Map of Manila" 
-                     class="w-full h-48 object-cover opacity-80">
-            </div>
+    <div class="space-y-4">
+        <p class="text-white-400 font-medium transition-transform duration-300 active:scale-90">📍 NAIA Terminal 3, Manila, Philippines</p>
+        <div class="overflow-hidden rounded-2xl border border-white/10 shadow-2xl bg-[#1a1a1a] transition-transform duration-300 active:scale-95">
+            <img src="https://maps.googleapis.com/maps/api/staticmap?center=NAIA+Terminal+3,Manila&zoom=14&size=600x400&markers=color:red%7CNAIA+Terminal+3,Manila&key=AIzaSyBaTGiuT9ppI62oe8-t5YWnLpp9bvDbOoA" alt="Map of NAIA Terminal 3">
         </div>
+    </div>
     </main>
 
     <script src="app.js"></script>
