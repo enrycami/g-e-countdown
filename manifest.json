@@ -1,6 +1,6 @@
 {
-  "name": "Manila Timer",
-  "short_name": "Manila",
+  "name": "G&E Countdown",
+  "short_name": "G&E",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#0a0a0a",
