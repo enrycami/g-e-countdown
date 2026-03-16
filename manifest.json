@@ -11,13 +11,13 @@
   ],
   "screenshots": [
     {
-      "src": "/screenshots/screenshot-mobile.png",
+      "src": "/screenshots/screenshot-mobile.jpg",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "Mobile view of G&E Countdown"
     },
     {
-      "src": "/screenshots/screenshot-mobile.png",
+      "src": "/screenshots/screenshot-mobile.jpg",
       "type": "image/png",
       "form_factor": "wide",
       "label": "Desktop view of G&E Countdown"
