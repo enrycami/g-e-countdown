@@ -21,9 +21,14 @@
             border-color: rgba(255, 255, 255, 0.3);
         }
 
+        .no-select {
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none;     /* IE 10 and IE 11 */
+            user-select: none;         /* Standard syntax */
+        }
     </style>
 </head>
-<body class="flex items-center justify-center min-h-screen p-6 font-sans">
+<body class="flex items-center justify-center min-h-screen p-6 font-sans no-select">
 
     <main class="w-full max-w-md text-center space-y-8 transition-opacity duration-1000">
         <h1 class="title text-4xl font-bold tracking-tight text-white"><span style='color:red;'>❤</span>G&E<span style='color:red;'>❤</span></h1>
