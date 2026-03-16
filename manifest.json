@@ -6,17 +6,18 @@
   "background_color": "#0a0a0a",
   "theme_color": "#0a0a0a",
   "icons": [
-    { "src": "/images/icon.png", "type": "image/png" }
+    { "src": "/images/icon512px.png", "sizes": "512x512","type": "image/png" },
+    { "src": "/images/icon128px.png", "sizes": "128x128","type": "image/png" }
   ],
   "screenshots": [
     {
-      "src": "/images/screenshot-mobile.png",
+      "src": "/screenshots/screenshot-mobile.png",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "Mobile view of G&E Countdown"
     },
     {
-      "src": "/images/screenshot-desktop.png",
+      "src": "/screenshots/screenshot-mobile.png",
       "type": "image/png",
       "form_factor": "wide",
       "label": "Desktop view of G&E Countdown"
